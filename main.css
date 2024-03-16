@@ -1,4 +1,72 @@
-h1{
-    background-color: brown;
-    color: #fff;
+.nav {
+    /* position: fixed; */
+    background: var(--nav);
+    width: 100%;
+}
+
+.header {
+    position: sticky;
+
+}
+
+
+.nav__box {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--text);
+    font-family: var(--font_C);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.logo img {
+    margin-right: 5px;
+
+}
+
+
+.menu__icon{
+    opacity: 0;
+}
+.nav__ul {
+    display: flex;
+    position: relative;
+    
+}
+a{
+    text-decoration: none;
+}
+
+.nav__ul a {
+    color: var(--text);
+    margin-left: 29px;
+    font-family: var(--font_M);
+    font-size: 14px;
+    transition: 500ms;
+}
+
+.nav__ul a::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    bottom: -20px;
+    transition: 500ms;
+
+}
+
+.nav__ul a:hover {
+    color: var(--hover);
+}
+
+.nav__ul a:hover:before {
+    color: var(--hover);
+    background-color: var(--hover);
 }
